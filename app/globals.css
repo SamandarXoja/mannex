@@ -16,6 +16,9 @@ body {
   }
 }
 
+.gradient-bg {
+  background: linear-gradient(180deg, #FF5454 0%, #CD4848 100%);
+}
 
 
 
@@ -119,6 +122,103 @@ a {
 .cart {
   display: flex;
 }
+
+.custom-navigation {
+  display: flex;
+  gap: 10px;
+  /* расстояние между кнопками */
+  justify-content: center;
+  margin-top: 20px;
+}
+
+/* Стили для кнопок */
+.custom-prev,
+.custom-next {
+  color: white;
+  /* background-color: #ff5454; */
+  border: none;
+  /* border-radius: 50%; */
+  border: 1px solid #000;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.custom-prev:hover,
+.custom-next:hover {
+  background-color: #4BA9FF;
+  border: 1px solid#4BA9FF;
+}
+
+.mySwiper .swiper-pagination {
+  color: #000;
+  /* Цвет текста по умолчанию */
+  font-size: 18px;
+  font-weight: bold;
+  /* background-color: rgba(0, 0, 0, 0.05); */
+  padding: 5px 10px;
+  border-radius: 8px;
+
+
+  display: flex;
+  align-items: center;
+}
+
+
+.mySwiper .swiper-pagination-current {
+  color: #4BA9FF;
+  font-size: 64px;
+  font-weight: 600;
+
+}
+
+.icon {
+  color: #000;
+}
+
+.custom-prev:hover .icon {
+  color: #fff;
+}
+
+.custom-next:hover .icon {
+  color: #fff;
+}
+
+.mySwiper .swiper-pagination-separator {
+  margin: 0 5px;
+  color: #000;
+
+}
+
+.mySwiper .swiper-pagination {
+  justify-content: end;
+}
+
+.mySwiper .swiper-pagination-total {
+  color: #000;
+  font-weight: 400;
+  font-size: 36px;
+}
+
+.custom-bg {
+  color: rgba(67, 66, 66, 0.10);
+  ;
+}
+
+.active-bg {
+  background: #4BA9FF;
+  color: #fff;
+}
+
+/* .custom-placeholder{
+  color: red;
+} */
+
+
 
 @media(max-width: 1200px) {
 
