@@ -5,8 +5,8 @@ import { Montserrat } from "next/font/google"
 
 // import { Header } from "@/components/shared";
 
-import { HeaderInput } from "@/components/shared/Header/header-input";
-import { Navbar } from "@/components/shared";
+
+import { Footer, Navbar } from "@/components/shared";
 
 const monserta = Montserrat({
   subsets: ['cyrillic'],
@@ -33,8 +33,8 @@ export default function RootLayout({
         className={`${monserta.variable}  antialiased`}
       >
         <Navbar />
-        <HeaderInput />
         {children}
+        <Footer />
       </body>
     </html>
   );

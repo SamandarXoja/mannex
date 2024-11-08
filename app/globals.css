@@ -218,7 +218,10 @@ a {
   color: red;
 } */
 
+.custom-cart {
+  background: linear-gradient(180deg, #FF5454 0%, #CD4848 100%);
 
+}
 
 @media(max-width: 1200px) {
 

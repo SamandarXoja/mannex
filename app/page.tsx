@@ -1,4 +1,4 @@
-import { About, Categories, Filter, Header, Paginations, ProductsCards } from "@/components/shared";
+import { About, Categories, Filter, Header, HeaderInput, Paginations, ProductsCards } from "@/components/shared";
 
 
 
@@ -6,6 +6,7 @@ export default function Home() {
   return (
     <>
 
+      <HeaderInput />
       <Header />
       <About />
       <Categories />
@@ -16,6 +17,7 @@ export default function Home() {
       <div className="mt-[88px] ml-[300px]">
         <Paginations />
       </div>
+
 
 
 

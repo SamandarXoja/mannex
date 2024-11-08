@@ -28,7 +28,7 @@ interface Props {
 export const Header: React.FC<Props> = ({ className }) => {
   const swiperRef = useRef<any>(null);
   return (
-    <header className={`${className} relative`}>
+    <div className={`${className} relative`}>
 
       <div className="absolute top-[130px] z-[-1]">
         <Image src="/images/item.png"
@@ -37,7 +37,7 @@ export const Header: React.FC<Props> = ({ className }) => {
           alt="Picture of the author" />
       </div>
 
-      
+
       {/* input */}
       <div className="max-w-[1470px] w-full pr-[15px] pl-[15px] mx-auto items-center flex justify-between">
         <div className="max-w-[921px]  w-full">
@@ -114,6 +114,6 @@ export const Header: React.FC<Props> = ({ className }) => {
       </div>
 
 
-    </header>
+    </div>
   )
 }
